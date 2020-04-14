@@ -1,0 +1,7 @@
+# Builds the module for julia. It first includes all the definitions
+# for the julia build and then overwrites specific keys
+!include julia.yaml
+!include rcic-module.yaml
+---
+- package: Julia module
+  category: LANGUAGES

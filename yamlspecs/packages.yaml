@@ -1,0 +1,7 @@
+system:
+bootstrap:
+build:
+   - julia
+   - julia-module
+manifest: 
+   - "{{build }}"
