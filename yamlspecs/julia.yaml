@@ -19,9 +19,7 @@
       polymorphism in a dynamic programming language; with 
       multiple dispatch as its core programming paradigm. Julia supports concurrent, 
       (composable) parallel and distributed computing. 
-      
-      Binary Release from: {{vendor_source}}
-
+      Binary Release {{vendor_source}}
   build:
     configure: echo
     configure_args: "Pre-compiled binary release" 
