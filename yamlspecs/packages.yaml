@@ -4,4 +4,4 @@ build:
    - julia
    - julia-module
 manifest: 
-   - "{{build }}"
+   - "{{build}}"

@@ -1,4 +1,5 @@
 !include rcic-package.yaml
+!include rpm.yaml
 ---
 - package: Julia Language
   name: julia 
@@ -20,10 +21,16 @@
       multiple dispatch as its core programming paradigm. Julia supports concurrent, 
       (composable) parallel and distributed computing. 
       Binary Release {{vendor_source}}
+
+  addfile:
+    - filter-requires-{{name}}.sh
+  rpmFilters: *filterRequires
+
   build:
     configure: echo
     configure_args: "Pre-compiled binary release" 
     pkgmake: echo 
+    modules:
     target: "No explicit Make required"
   install:
     makeinstall: $(TAR) cf - * | (cd $(ROOT)/{{root}}; $(TAR) xf -)
