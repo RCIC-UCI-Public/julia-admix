@@ -1,5 +1,5 @@
 # Builds the module for julia.
-!include julia-current.yaml
+!include julia-latest.yaml
 !include rcic-module.yaml
 ---
 - package: Julia module

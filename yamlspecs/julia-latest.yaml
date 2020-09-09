@@ -1,0 +1,7 @@
+!include julia.yaml
+---
+- version: "{{versions.julia_latest.version}}" 
+  major_version: "{{versions.julia_latest.major}}"
+  julia_os: "{{versions.julia_latest.os}}"
+  julia_arch: "{{versions.julia_latest.arch}}"
+  arch: "x86_64"
