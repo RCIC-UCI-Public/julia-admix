@@ -30,7 +30,7 @@
     configure: echo
     configure_args: "Pre-compiled binary release" 
     pkgmake: echo 
-    modules:
+    modules: ""
     target: "No explicit Make required"
   install:
     makeinstall: $(TAR) cf - * | (cd $(ROOT)/{{root}}; $(TAR) xf -)
