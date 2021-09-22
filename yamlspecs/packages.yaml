@@ -3,7 +3,9 @@ bootstrap:
 build:
    - julia
    - julia-module
-   - julia-latest
-   - julia-latest-module
+#   - julia-latest
+#   - julia-latest-module
 manifest: 
    - "{{build}}"
+sets:
+   - latest

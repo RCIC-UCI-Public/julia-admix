@@ -1,7 +1,0 @@
-# Builds the module for julia.
-!include julia-latest.yaml
-!include rcic-module.yaml
----
-- package: Julia module
-  category: LANGUAGES
-  release: 2

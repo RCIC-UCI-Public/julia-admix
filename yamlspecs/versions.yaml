@@ -4,8 +4,3 @@ julia:
   version: "1.5.1"
   arch: "x64"
   os: "linux"
-julia_latest:
-  major: "1.6"
-  version: "1.6.0"
-  arch: "x64"
-  os: "linux"
