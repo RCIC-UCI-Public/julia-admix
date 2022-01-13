@@ -1,6 +1,6 @@
 ---
 julia:
-  major: "1.5"
-  version: "1.5.1"
+  major: "1.6"
+  version: "1.6.0"
   arch: "x64"
   os: "linux"
