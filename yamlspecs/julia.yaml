@@ -8,6 +8,7 @@
   major_version: "{{versions.julia.major}}"
   julia_os: "{{versions.julia.os}}"
   julia_arch: "{{versions.julia.arch}}"
+  release: 2
   arch: "x86_64"
   vendor_source: https://julialang-s3.julialang.org/bin/{{julia_os}}/{{julia_arch}}/{{major_version}}/{{name}}-{{version}}-{{julia_os}}-{{arch}}.{{extension}}
   description: |
@@ -23,6 +24,7 @@
   addfile:
     - filter-requires-{{name}}.sh
   rpmFilters: *filterRequires
+  rpmAutoRequires: "AutoReqProv: Yes\\n %define __strip /bin/true"
   build:
     configure: echo
     configure_args: "Pre-compiled binary release" 
