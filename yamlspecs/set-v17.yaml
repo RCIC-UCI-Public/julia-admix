@@ -1,0 +1,7 @@
+---
+versions: versions-latest.yaml
+build:
+  - julia
+  - julia-module
+manifest:
+  - "{{build}}"

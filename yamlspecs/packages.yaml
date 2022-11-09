@@ -7,4 +7,5 @@ manifest:
    - "{{build}}"
 sets:
    - v15
+   - v17
    - latest
