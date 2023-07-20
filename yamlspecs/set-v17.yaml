@@ -1,5 +1,5 @@
 ---
-versions: versions-latest.yaml
+versions: versions-v17.yaml
 build:
   - julia
   - julia-module
