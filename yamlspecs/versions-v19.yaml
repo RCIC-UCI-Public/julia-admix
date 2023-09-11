@@ -1,0 +1,6 @@
+!include versions.yaml
+---
+julia:
+  major: "1.9"
+  version: "1.9.3"
+  release: 1
