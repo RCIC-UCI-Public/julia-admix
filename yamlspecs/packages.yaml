@@ -6,6 +6,5 @@ build:
 manifest: 
    - "{{build}}"
 sets:
-#  - v17
    - v18
    - v19
