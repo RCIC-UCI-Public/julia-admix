@@ -1,7 +1,0 @@
----
-versions: versions-v15.yaml
-build:
-  - julia
-  - julia-module
-manifest:
-  - "{{build}}"
