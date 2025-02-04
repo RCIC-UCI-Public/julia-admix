@@ -1,10 +1,11 @@
+---
 system:
 bootstrap:
 build:
    - julia
    - julia-module
 manifest: 
-   - "{{build}}"
 sets:
+   - v16
    - v18
    - v19

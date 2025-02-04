@@ -1,7 +1,5 @@
+!include packages.yaml
 ---
 versions: versions-v19.yaml
-build:
-  - julia
-  - julia-module
 manifest:
   - "{{build}}"

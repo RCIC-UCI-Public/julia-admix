@@ -1,6 +1,6 @@
 !include versions.yaml
 ---
 julia:
-  major: "1.8"
-  version: "1.8.2"
+  major: "1.6"
+  version: "1.6.0"
   release: 3
