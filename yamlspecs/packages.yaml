@@ -1,10 +1,13 @@
 ---
 system:
-bootstrap:
-build:
+build0:
    - julia
    - julia-module
+bootstrap:
+build:
 manifest: 
+   - "{{bootstrap}}"
+   - "{{build}}"
 sets:
    - v16
    - v18

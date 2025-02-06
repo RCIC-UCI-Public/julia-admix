@@ -1,5 +1,5 @@
 !include packages.yaml
 ---
 versions: versions-v16.yaml
-manifest:
-  - "{{build}}"
+build:
+  - "{{build0}}"
