@@ -5,7 +5,7 @@ build0:
    - julia-module
 bootstrap:
 build:
-manifest: 
+manifest:
    - "{{bootstrap}}"
    - "{{build}}"
 sets:
