@@ -2,9 +2,9 @@
 !include rpm.yaml
 ---
 - package: Julia Language
-  name: julia 
+  name: julia
   versions: !include versions.yaml
-  version: "{{versions.julia.version}}" 
+  version: "{{versions.julia.version}}"
   major_version: "{{versions.julia.major}}"
   julia_os: "{{versions.julia.os}}"
   julia_arch: "{{versions.julia.arch}}"
@@ -12,19 +12,14 @@
   arch: "x86_64"
   vendor_source: https://julialang-s3.julialang.org/bin/{{julia_os}}/{{julia_arch}}/{{major_version}}/{{name}}-{{version}}-{{julia_os}}-{{arch}}.{{extension}}
   description: |
-      Julia {{version}} is is a high-level, high-performance, dynamic programming 
-      language. While it is a general purpose language and can be used to write 
-      any application, many of its features are well-suited for high-performance 
-      numerical analysis and computational science.
-      Distinctive aspects of Julia's design include a type system with parametric 
-      polymorphism in a dynamic programming language; with 
-      multiple dispatch as its core programming paradigm. Julia supports concurrent, 
-      (composable) parallel and distributed computing. Binary Release
-      {{vendor_source}}
+      Julia is a high-level and high-performance dynamic programming language.
+      Many of its features are well-suited for high-performance numerical
+      analysis and computational science. Julia supports concurrent,
+      parallel and distributed computing. RPM is build from a binary release.
   build:
     configure: echo
-    configure_args: "Pre-compiled binary release" 
-    pkgmake: echo 
+    configure_args: "Pre-compiled binary release"
+    pkgmake: echo
     modules: ""
     target: "No explicit Make required"
   install:
